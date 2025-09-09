@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121; color: #ffff">
+    <ul class="language">
+      <li>javascript</li>
+    </ul>
+    <p id="demo"></p>
+  </body>
+  <script>
+   function addLang(lang){
+    const li = document.createElement("li");
+    li.innerHTML = `${lang}`;
+    document.querySelector(".language").appendChild(li)
+   }
+addLang("python")
+
+// add value
+function addOptimize(lang){
+const li = document.createElement("li");
+li.appendChild(document.createTextNode(lang));
+document.querySelector(".language").appendChild(li)
+}
+addOptimize("css")
+
+// edit value
+
+const secLang = document.querySelector("li:nth-child(2)");
+// secLang.innerHTML = "c++"
+const newLi = document.createElement("li");
+newLi.textContent="ci";
+secLang.replaceWith(newLi)
+
+const firstLang = document.querySelector("li");
+firstLang.outerHTML="<li>typessceipt</li>"
+
+// remove
+const lastLang = document.querySelector("li:last-child");
+lastLang.remove()
+  </script>
+</html>

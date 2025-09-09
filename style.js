@@ -40,13 +40,13 @@
 // gameCounter++;
 // console.log(gameCounter)
 
-//  console.log(null>0);
-//  console.log(null<0);
-//  console.log(null>=0);
+ console.log(null>0);
+ console.log(null<0);
+ console.log(null>=0);
 
-// console.log(undefined<0);
-//  console.log(undefined>0);
-//  console.log(undefined==0);
+console.log(undefined<0);
+ console.log(undefined>0);
+ console.log(undefined==0);
 
 
 // stack(primitive),heap(non-primitive)
@@ -65,10 +65,10 @@
 // user2.age=21
 // console.log(user1)
 // console.log(user2)
-const myArray = [1, 2, 3, 4];
-const heroes = ["salman", "rehman"]
-const array = new Array(1, 2, 3, 4)
-console.log(myArray[1]);
+// const myArray = [1, 2, 3, 4];
+// const heroes = ["salman", "rehman"]
+// const array = new Array(1, 2, 3, 4)
+// console.log(myArray[1]);
 
 
 

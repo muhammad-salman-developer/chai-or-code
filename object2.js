@@ -46,7 +46,7 @@
 // users[1].email;
 // console.log(Object.keys(tender));
 // console.log(Object.values(tender));
-// console.log(Object.entries(tender));   // key value made in array
+// console.log(Object.entries(tender));             // key value made in array
 // console.log(tender.hasOwnProperty('isLoged'));  // this property available in this obj ?
 
 

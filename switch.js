@@ -21,7 +21,7 @@ switch (month) {      // key is value which i check everytime
             case 3:
         console.log("mar");  // if we remove the break then the other cases execute except default
         
-        // break;
+        break;
             case 4:
         console.log("apr");
         

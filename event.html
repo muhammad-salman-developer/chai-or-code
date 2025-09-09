@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in js</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>amazing images</h2>
+    <div>
+    <ul id="images">
+        <li><img src="assets/images/bg-8.webp" id="blog" width="300px" alt=""></li>
+        <li><img src="assets/images/blog-hero-2.webp" id="blog1" width="300px" alt=""></li>
+    </ul>
+    </div>
+</body>
+
+<script>
+    // document.getElementById("blog").onclick = function(){ // features provide least  
+                                          
+    // }
+    // document.querySelector("li").addEventListener("click", function(){
+        //     alert("salman")
+        // },false)                   // who event apply in addevent
+        
+        // attachEvent()
+        // jquery - onEvent
+    
+     //type, timestamp, defaultPrevented,
+     // target, toElement, srcElement, currentTarget
+     // clientx, clienty, screenx, screeny
+     // altKey, ctrKey, shiftKey, keyCode
+
+//++++++ capturing mode ++++++++
+// top to bottom
+// for capturing mode use true
+
+//  document.getElementById("images").addEventListener("click", function(e){
+//      console.log("clicked inside ul");
+     
+//      },true)  
+
+//       document.getElementById("blog1").addEventListener("click", function(e){
+//      console.log("clicked inside li");
+     
+//      },true)  
+
+// +++++++++++ bubbling
+//bottom to top
+// for false use bubbling
+
+// document.getElementById("images").addEventListener("click", function(e){
+//      console.log("clicked inside ul");
+     
+//      }, false)  
+
+//       document.getElementById("blog1").addEventListener("click", function(e){
+//      console.log("clicked inside li");  
+//      e.stopPropagation()               // bubble ho kr uper ni jaye ga
+//      }, false)  
+
+     document.querySelector("#images").addEventListener("click", function(e){
+        console.log(e.target.parentNode);
+        let reh = e.target.parentNode;
+        reh.remove()
+        
+     })
+</script>
+</html>

@@ -20,14 +20,14 @@ const myArray = [1, 2, 3, 4];
 
 // slice & splice
 
-// const arr = [1, 2, 3, 4, 5];
+// const arr = [1, 2, 3, 4, 5,];
 // const sliced = arr.slice(1,4);  // means that it remove index 1 and 4
-// console.log(arr);
+// // console.log(arr);
 // console.log(sliced);
 
-// const arr1 = [1, 2, 3, 4, 5, 6];
-// arr1.splice(2, 3);    // after 2 index it removes 3 element
-// console.log(arr1)
+const arr1 = [1, 2, 3, 4, 5, 6];
+arr1.splice(2, 3);               // after 2 index it removes 3 element
+console.log(arr1)
 
 const city = ["multan", "lahore","karachi" ]
 const city1 = ['sialkot', 'gawadar', 'lasbila'];
@@ -48,7 +48,7 @@ const city1 = ['sialkot', 'gawadar', 'lasbila'];
 // console.log(Array.from("salman"))   // convert to array
 // console.log(Array.from({name:"salamn"}))   // interesting
 
-let score = 100;
-let score1 = 100;
-let score2 = 100;
-console.log(Array.of(score,score1,score2,))
+// let score = 100;
+// let score1 = 100;
+// let score2 = 100;
+// console.log(Array.of(score,score1,score2,))
